@@ -14,31 +14,31 @@ php artisan ui bootstrap
 
 
 
-Migration
-         php artisan make:migration create_users_table
-         php artisan make:migration add_votes_to_users_table --table=users
+## Migration
+        - php artisan make:migration create_users_table
+        - php artisan make:migration add_votes_to_users_table --table=users
 
-Create Middileware:
-          php artisan make:middleware CheckAge
+## Create Middileware:
+         - php artisan make:middleware CheckAge
 
- Create Controller
-          php artisan make:controller PhotoController --resource
-          php artisan make:controller PhotoController --resource --model=Photo
-          php artisan make:controller API/PhotoController --api
-          php artisan make:controller ShowProfile --invokable
+ ## Create Controller
+          -  php artisan make:controller PhotoController --resource
+          -  php artisan make:controller PhotoController --resource --model=Photo
+          -  php artisan make:controller API/PhotoController --api
+          -  php artisan make:controller ShowProfile --invokable
 
-Create Model
+## Create Model
           php artisan make:model Flight
           php artisan make:model Flight --migration
           php artisan make:model Flight -m
 
-Create Observer
+## Create Observer
          php artisan make:observer UserObserver --model=User
 
-Create Command
+## Create Command
          php artisan make:command SharesAlloted
 
-Create Request
+## Create Request
          php artisan make:request StoreBlogPost
          php artisan make:rule Uppercase
 
